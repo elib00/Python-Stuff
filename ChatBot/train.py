@@ -13,8 +13,7 @@ class ChatDataSet(Dataset):
         self.n_samples = len(x_train)
         self.x_data = x_train
         self.y_data = torch.LongTensor(y_train)
-            
-    #dataset[index]
+        
     def __getitem__(self, index):
         return self.x_data[index], self.y_data[index]
         
